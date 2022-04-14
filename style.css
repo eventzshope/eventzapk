@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+/* me kote nav la komanse */
+
+
+
+.logo img {
+    border-radius: 5px;
+    width: 250px;
+    height: 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: black;
+    padding: 7px 13px;
+    border-radius: 5px;
+
+}
+
+a.active,
+a:hover {
+    background: rgb(100, 116, 207);
+    color: black;
+    transition: .5s;
+}
+
+.checkbtn img {
+    margin-top: 25px;
+    width: 25px;
+    float: right;
+
+    cursor: pointer;
+    /* sa se pou fe bouton meni an disparet */
+    display: none;
+}
+
+.checkbtnn img {
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 25px;
+
+    float: right;
+    cursor: pointer;
+}
+
+.we {
+    margin-right: 80px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* la se pou fe bouton check la disparet */
+#check {
+    display: none;
+
+}
+
+/* me la nav la fini */
+
+
+
+/* sa se pou teks top model la */
+
+#modele h1 {
+    font-size: 1em;
+    text-align: center;
+}
+
+/* pou 3 imaj top model yo ki se block1 */
+.block1 {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.block1 img {
+    height: 480px;
+    margin-right: 4px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Fen block1 */
+
+
+/* sa se pou mete imaj yo nan menm liy epi pou bay imaj yo yon tay  */
+.block2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+    justify-items: center;
+
+
+
+}
+
+.premier {
+    margin-right: 60px;
+}
+
+.block2 img {
+    height: 300px;
+}
+
+/* me kote li fini */
+
+
+/* sa se pou chak imaj  */
+.premier {
+    /* margin-left: 70px; */
+    transition: 0.5s;
+}
+
+.premier:hover {
+    margin-top: -7px;
+    box-shadow: 1px 1px 1px 2px gray;
+}
+
+/* me kote li fini */
+
+
+/* sa se pou etwal yo */
+.etoils {
+    display: flex;
+
+}
+
+.etoils img {
+    height: 13px;
+    margin-top: 17px;
+
+}
+
+/* me kote li fini */
+
+/* sa se pou etwal yo ak ekriti a epi tou
+ se nan pati nou mete yo sou menm liy 
+epi bay gwose ak laje nou vle a */
+.un h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.un {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+
+
+}
+
+.un img {
+    margin-top: 5px;
+}
+
+/* sa se pou pri a ak ti panye a epi tou
+ se nan pati nou mete yo sou menm liy 
+epi bay gwose ak laje nou vle a */
+.deux {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+.deux img {
+    height: 25px;
+    width: 25px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.deux p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contents {
+
+    justify-content: center;
+    justify-items: center;
+
+}
+
+/* me la li fini */
+
+@media(max-width:952px) {
+    nav .logo {
+        font-size: 17px;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    #modele h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .block1 img {
+        width: 250px;
+        height: 350px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .modele {
+        align-items: center;
+        margin-left: 300px;
+    }
+
+    .modele h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:684.9px) {
+    .checkbtn img {
+        display: block;
+        margin-right: 40px;
+    }
+
+
+    ul {
+        position: fixed;
+        background: black;
+        text-align: center;
+        width: 100%;
+        top: -100%;
+        margin-top: 70px;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    .logo img {
+        width: 150px;
+        height: 70px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: blue;
+    }
+
+    #check:checked~ul {
+        top: 0;
+    }
+
+
+
+    .block1 {
+        margin-left: -30px;
+    }
+
+    .block1 img {
+        width: 100px;
+        height: 180px;
+    }
+
+    .premier:hover {
+        box-shadow: none;
+        margin-top: 0px;
+    }
+
+    .un img {
+        margin-top: -10px;
+    }
+
+    .un {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .deux img {
+        margin-top: -10px;
+    }
+
+    .deux {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-box a,
+    h3,
+    p {
+        margin-top: -15px;
+        margin-left: -50px;
+    }
+
+    .social {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    #logo img {
+        width: 150px;
+        margin-left: -30px;
+    }
+
+    #logo {
+        margin-left: -40px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+    display: flex;
+    margin: 70px;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+}
+
+.footer-box {
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+    margin-bottom: 14px;
+
+}
+
+.footer-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+
+}
+
+.footer-box p {
+    margin-top: -10px;
+
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: -35px;
+}
+
+#logo img {
+    width: 200px;
+}
+
+.social img {
+    cursor: pointer;
+    width: 20px;
+    margin-left: 10px;
+    transition: 0.3s;
+
+}
+
+.social img:hover {
+    margin-top: -10px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
